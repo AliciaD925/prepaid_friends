@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Prepaid Friends Bulk Order Forms</title>
+    <link rel="stylesheet" type="text/css" href="prepaid.css"/>
+</head>
+
+<body>
+    <div class="bulk-order">
+        <h1>Bulk Order Form</h1>
+        <div class= "bulk-form">
+        <form>
+            <div class="form-row">              
+            <label for="card-type">Card Type:</label>
+            <select id="card_type" name="card-type">
+                <!-- code to populate selection of cards -->
+                <option value="placeholder">Select</option>
+                <option value="visa">Visa 123456</option>
+                <option value="mc">MC 123456</option>
+                <option value="amex">AMEX 123456</option>
+                <option value="discover">Disc 123456</option>
+            </select>    
+            </div>
+
+            <div class="form-row">              
+                <label for="card-quantity">Number of Cards:</label>
+                <input type="number">
+            </div>
+
+            <div class="form-row">              
+                <label for="card-amount">Card Amount:</label>
+                <input type="number">
+            </div>
+
+            <div class="form-row">              
+                <label for="max-trans">Max Tansactions Allowed <br>(per card):</label>
+                <input type="number">
+            </div>
+
+            <div class="form-row">              
+                <label for="card-cost">Cost of Card:</label>
+                <input type="number">
+                <!-- dynamacially coded based off card selected -->
+            </div>
+
+            <div class="form-row">              
+                <label for="subtotal"><b>Subtotal:</b></label>
+                <input type="number">
+                <!-- code to display the subtotal -->
+            </div>
+            <div class ="center-btn"> 
+                <button class="add-btn" type="button" onclick="addSubtoal">Add</button>
+                <!-- code to add the subtotal to the invoice -->
+            </div>
+        </form>
+        </div>
+        <div class="invoice-table">
+            <table align="center">
+                <tr>
+                  <th>Card</th>
+                  <th># of Cards</th>
+                  <th>Card Amount</th>
+                  <th>Max Trans</th>
+                  <th>Card Cost</th>
+                  <th>Remove</th>
+                </tr>
+                <tr>
+                    <!-- code to dynamically add to the order form when user clicks "add" -->
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><button type="radio">Remove</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Identifier:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Wire/BTC Fee:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><b>Total:</b></td>
+                    <td></td>
+                </tr>
+              </table>
+        </div>
+        <div class="payment">
+           <h4>Payment Method:</h4>
+           <!-- allow user to only select one or the other -->
+           <div class="pay_select">
+           <input type="radio" id="radio" name="" value="">
+           <label id="pay_type" for="payment">Bitcoin</label><br>
+           <input type="radio" id="radio" name="" value="">
+           <label id="pay_type" for="payment">Wire Transfer</label><br>
+            </div>
+        </div>
+        <div class="center-btn"> 
+            <input id="submit_btn" type="submit" value="Submit">
+            <!-- submit order form and generates pdf -->
+        </div>
+
+    </div>
+</body>
+
+<footer>
+
+</footer>
+
+</html>

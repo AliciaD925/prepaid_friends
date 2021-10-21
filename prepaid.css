@@ -1,0 +1,138 @@
+h1 {
+  text-align: center;
+  font-family: LEMON MILK, Geneva, Tahoma, sans-serif;
+  font-size: 36px;
+  color: #272727;
+  margin-bottom: 40px;
+}
+
+h4 {
+  font-family: LEMON MILK, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.bulk-form {
+  /* position: relative; */
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 50px;
+  padding: 20px;
+  box-shadow: 0px 10px 15px 15px rgba(75, 75, 75, 0.25);
+  background-color: #22212f;
+}
+
+form {
+  border: 3px solid #1ba12a;
+  padding: 20px;
+  background-color: #22212f;
+  color: white;
+}
+label {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: inline-block;
+  padding-left: 20%;
+  width: 250px;
+}
+option {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
+}
+input,
+#card_type {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: inline-block;
+  padding-left: 50px;
+  height: 30px;
+  width: 100px;
+  margin: 10px;
+}
+#card_type {
+  width: 155px !important;
+  height: 35px;
+  border: none;
+}
+
+.form-row {
+  margin: 1em;
+}
+
+.center-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-btn,
+#submit_btn {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  background-color: #1ba12a;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: none;
+  width: 150px;
+}
+
+#submit_btn {
+  height: 50px;
+  margin-top: 40px;
+}
+
+.invoice-table {
+  border-collapse: collapse;
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.invoice-table td,
+.invoice-table th {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid #ddd;
+  padding: 5px;
+  width: 150px;
+}
+
+.invoice-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.invoice-table th {
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  background-color: #272727;
+  color: white;
+}
+
+.invoice-table td {
+  font-size: 14px;
+}
+
+/* .payment {
+  display: flex;
+  align-items: flex-end;
+  flex-flow: wrap;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-right: 20px;
+} */
+.pay_select {
+  margin-left: 30%;
+  margin-top: -50px;
+}
+#radio {
+  height: 1em;
+  width: 1em;
+}
+
+#pay_type {
+  padding-left: 5px;
+}
